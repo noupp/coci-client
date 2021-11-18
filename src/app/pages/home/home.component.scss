@@ -1,0 +1,42 @@
+$primary-color: #404bf9;//blue
+$black: #000000;
+
+.content {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 3%
+}
+
+.content > mat-card {
+    width: 15%;
+    margin-bottom: 5%;
+    background-color: #eeeeee;
+}
+
+.matcard{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.button{
+  display: block;
+  margin : auto;
+  color: white;
+  background-color: $primary-color;
+}
+
+h4{
+  font-weight: bold;
+  text-align: center;
+  font-size: 150%;
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 350%;
+}
+
+.intro{
+  text-align: center;
+}

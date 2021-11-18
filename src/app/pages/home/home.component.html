@@ -1,0 +1,21 @@
+<div class="billets-page">
+  <!-- Title and content of home page -->
+  <h1>Billets</h1>
+  <h4>Prenez vos billets pour le concert {{ concert_name }} qui aura lieu le {{ concert_date }}</h4>
+  <p class="intro">Rendez vous à la salle {{ salle_name }}, {{ salle_address }}. Les places seront ouvertes dans un délai limité. Bon courage!</p>
+  <!-- Each cards that represents places we can buy -->
+  <div class="content" fxLayout="row wrap" fxLayoutGap="16px">
+    <mat-card class="matcard" fxFlex="30%" *ngFor="let place of places">
+        <mat-card-header class="header">
+          <mat-card-title class="title">Place numéro {{ place.id }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Type : {{ place.type }}</p>
+          <p>Prix : {{ place.prix }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button class="button" [disabled]="estDispo(place)" (click)="addToCart(place)">ACHETER</button>
+        </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

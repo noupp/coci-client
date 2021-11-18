@@ -1,0 +1,33 @@
+$primary-color: #404bf9; //blue
+$black: #000000;
+$white: #ffffff;
+
+.mainbar{
+  color: white;
+  background-color: $black;
+  height: 5px;
+  & p{
+    font-size: 10px;
+    margin: 0 auto ;
+  }
+}
+
+.toolbar{
+  color: white;
+  background-color: $primary-color;
+  & a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin-right : 2%;
+  }
+}
+
+.panier{
+  margin-left: 88%;
+  margin-top: 4px;
+}
+
+.row{
+  display: flex;
+}

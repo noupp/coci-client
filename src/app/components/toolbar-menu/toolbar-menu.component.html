@@ -1,0 +1,19 @@
+<!-- First toolbar -->
+<mat-toolbar class="mainbar">
+  <mat-toolbar-row>
+    <p>Billetterie 100% Officielle et Garantie</p>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!-- Second toolbar for menu -->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row class="row">
+    <a mat-list-item routerLink="/">Home</a>
+    <a mat-list-item routerLink="/about">About</a>
+    <a class="panier" routerLink="/panier"><mat-icon>shopping_cart</mat-icon></a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!-- Content of page that have been routed on a link -->
+<div class="content-outlet">
+  <br/>
+  <router-outlet></router-outlet>
+</div>
