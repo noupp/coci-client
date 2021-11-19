@@ -1,0 +1,6 @@
+# fichiers propres a angular
+/node_modules
+/e2e
+
+# fichiers conflit git
+*.orig
